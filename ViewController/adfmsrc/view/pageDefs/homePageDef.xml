@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel"
+                version="11.1.1.61.92" id="homePageDef" Package="view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <page path="oracle.ui.pattern.dynamicShell.model.dynamicTabShellDefinition"
+          id="pageTemplateBinding" Refresh="ifNeeded"/>
+    <iterator Binds="TmcsLookupTypesView1" RangeSize="25"
+              DataControl="AppModuleDataControl"
+              id="TmcsLookupTypesView1Iterator"/>
+    <searchRegion Binds="TmcsLookupTypesView1Iterator" Criteria=""
+                  Customizer="oracle.jbo.uicli.binding.JUSearchBindingCustomizer"
+                  id="TmcsLookupTypesView1Query"/>
+  </executables>
+  <bindings>
+    <tree IterBinding="TmcsLookupTypesView1Iterator" id="TmcsLookupTypesView1">
+      <nodeDefinition DefName="model.TmcsLookupTypesView"
+                      Name="TmcsLookupTypesView10">
+        <AttrNames>
+          <Item Value="LookupId"/>
+          <Item Value="LookupCode"/>
+          <Item Value="LookupName"/>
+          <Item Value="Description"/>
+          <Item Value="SecurityLevel"/>
+          <Item Value="CreationDate"/>
+          <Item Value="CreatedBy"/>
+          <Item Value="LastUpdateDate"/>
+          <Item Value="LastUpdatedBy"/>
+          <Item Value="LastUpdateLogin"/>
+          <Item Value="ObjectVersionNumber"/>
+          <Item Value="OrgId"/>
+          <Item Value="ClientId"/>
+        </AttrNames>
+      </nodeDefinition>
+    </tree>
+  </bindings>
+</pageDefinition>

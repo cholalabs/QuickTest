@@ -1,0 +1,502 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="TmcsLookupValues"
+  Version="11.1.1.61.92"
+  InheritPersonalization="true"
+  DBObjectType="table"
+  DBObjectName="TMCS_LOOKUP_VALUES"
+  AliasName="TmcsLookupValues"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="Access"/>
+    <AttrArray Name="_publishEvents"/>
+  </DesignTime>
+  <Attribute
+    Name="LookupId"
+    IsNotNull="true"
+    Precision="38"
+    Scale="0"
+    ColumnName="LOOKUP_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LookupCode"
+    IsNotNull="true"
+    Precision="30"
+    ColumnName="LOOKUP_CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Name"
+    IsNotNull="true"
+    Precision="80"
+    ColumnName="NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="80"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Description"
+    Precision="240"
+    ColumnName="DESCRIPTION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="240"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Sequence"
+    ColumnName="SEQUENCE"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="EnabledFlag"
+    IsNotNull="true"
+    Precision="1"
+    ColumnName="ENABLED_FLAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="StartDateActive"
+    IsNotNull="true"
+    ColumnName="START_DATE_ACTIVE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreationDate"
+    ColumnName="CREATION_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedBy"
+    Precision="50"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdateDate"
+    ColumnName="LAST_UPDATE_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdatedBy"
+    Precision="50"
+    ColumnName="LAST_UPDATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdateLogin"
+    Precision="38"
+    Scale="0"
+    ColumnName="LAST_UPDATE_LOGIN"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ObjectVersionNumber"
+    Precision="38"
+    Scale="0"
+    ColumnName="OBJECT_VERSION_NUMBER"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ExtattributeCategory"
+    Precision="30"
+    ColumnName="EXTATTRIBUTE_CATEGORY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute1"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE1"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute2"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE2"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute3"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE3"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute4"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE4"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute5"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE5"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute6"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE6"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute7"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE7"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute8"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE8"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute9"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE9"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute10"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE10"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute11"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE11"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute12"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE12"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute13"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE13"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute14"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE14"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Extattribute15"
+    Precision="150"
+    ColumnName="EXTATTRIBUTE15"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Tag"
+    Precision="150"
+    ColumnName="TAG"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="150"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LookupValueId"
+    IsNotNull="true"
+    Precision="38"
+    Scale="0"
+    ColumnName="LOOKUP_VALUE_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="TMCS_LOOKUP_VALUES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="EndDateActive"
+    ColumnName="END_DATE_ACTIVE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="TMCS_LOOKUP_VALUES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="TmcsLookupTypes"
+    Association="model.FkLookupAssoc"
+    AssociationEnd="model.FkLookupAssoc.TmcsLookupTypes"
+    AssociationOtherEnd="model.FkLookupAssoc.TmcsLookupValues"
+    Type="oracle.jbo.server.EntityImpl"
+    IsUpdateable="true"/>
+  <Key
+    Name="SysC0011498">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011498"/>
+      <Attr Name="_checkCondition" Value='"LOOKUP_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupValues.LookupId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011499">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011499"/>
+      <Attr Name="_checkCondition" Value='"LOOKUP_CODE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupValues.LookupCode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011500">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011500"/>
+      <Attr Name="_checkCondition" Value='"NAME" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupValues.Name"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011501">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011501"/>
+      <Attr Name="_checkCondition" Value='"ENABLED_FLAG" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupValues.EnabledFlag"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011567">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011567"/>
+      <Attr Name="_checkCondition" Value='"LOOKUP_VALUE_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupValues.LookupValueId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011569">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011569"/>
+      <Attr Name="_checkCondition" Value='"START_DATE_ACTIVE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupValues.StartDateActive"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="TmcsLookupValuesPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="TMCS_LOOKUP_VALUES_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupValues.LookupValueId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="FkLookup">
+    <DesignTime>
+      <Attr Name="_referencedKey" Value="LOOKUP_PK"/>
+      <Attr Name="_isForeign" Value="true"/>
+      <Attr Name="_DBObjectName" Value="FK_LOOKUP"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupValues.LookupId"/>
+    </AttrArray>
+  </Key>
+</Entity>

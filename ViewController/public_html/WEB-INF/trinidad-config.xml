@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<trinidad-config xmlns="http://myfaces.apache.org/trinidad/config">
+
+  <skin-family>blafplus-rich</skin-family>
+</trinidad-config>

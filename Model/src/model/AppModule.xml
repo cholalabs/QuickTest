@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="AppModule"
+  Version="11.1.1.61.92"
+  InheritPersonalization="true"
+  ClearCacheOnRollback="true">
+  <DesignTime>
+    <Attr Name="_deployType" Value="0"/>
+  </DesignTime>
+  <ViewUsage
+    Name="TmcsLookupTypesView1"
+    ViewObjectName="model.TmcsLookupTypesView"/>
+  <ViewUsage
+    Name="TmcsLookupValuesView1"
+    ViewObjectName="model.TmcsLookupValuesView"/>
+  <ViewUsage
+    Name="TmcsLookupValuesView2"
+    ViewObjectName="model.TmcsLookupValuesView"/>
+  <ViewLinkUsage
+    Name="FkLookupLink1"
+    ViewLinkObjectName="model.FkLookupLink"
+    SrcViewUsageName="model.AppModule.TmcsLookupTypesView1"
+    DstViewUsageName="model.AppModule.TmcsLookupValuesView2"
+    Reversed="false"/>
+</AppModule>

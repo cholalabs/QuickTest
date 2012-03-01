@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE Entity SYSTEM "jbo_03_01.dtd">
+<!---->
+<Entity
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="TmcsLookupTypes"
+  Version="11.1.1.61.92"
+  InheritPersonalization="true"
+  DBObjectType="table"
+  DBObjectName="TMCS_LOOKUP_TYPES"
+  AliasName="TmcsLookupTypes"
+  BindingStyle="OracleName"
+  UseGlueCode="false">
+  <DesignTime>
+    <Attr Name="_codeGenFlag2" Value="Access"/>
+    <AttrArray Name="_publishEvents"/>
+  </DesignTime>
+  <Attribute
+    Name="LookupId"
+    IsNotNull="true"
+    Precision="38"
+    Scale="0"
+    ColumnName="LOOKUP_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="TMCS_LOOKUP_TYPES"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LookupCode"
+    IsNotNull="true"
+    Precision="30"
+    ColumnName="LOOKUP_CODE"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="30"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LookupName"
+    IsNotNull="true"
+    Precision="300"
+    ColumnName="LOOKUP_NAME"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="300"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="Description"
+    IsNotNull="true"
+    Precision="300"
+    ColumnName="DESCRIPTION"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="300"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="SecurityLevel"
+    IsNotNull="true"
+    Precision="1"
+    ColumnName="SECURITY_LEVEL"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="1"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreationDate"
+    ColumnName="CREATION_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="CreatedBy"
+    Precision="50"
+    ColumnName="CREATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdateDate"
+    ColumnName="LAST_UPDATE_DATE"
+    SQLType="TIMESTAMP"
+    Type="oracle.jbo.domain.Date"
+    ColumnType="DATE"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="7"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdatedBy"
+    Precision="50"
+    ColumnName="LAST_UPDATED_BY"
+    SQLType="VARCHAR"
+    Type="java.lang.String"
+    ColumnType="VARCHAR2"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="50"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="LastUpdateLogin"
+    Precision="38"
+    Scale="0"
+    ColumnName="LAST_UPDATE_LOGIN"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ObjectVersionNumber"
+    Precision="38"
+    Scale="0"
+    ColumnName="OBJECT_VERSION_NUMBER"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="OrgId"
+    IsNotNull="true"
+    Precision="38"
+    Scale="0"
+    ColumnName="ORG_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <Attribute
+    Name="ClientId"
+    IsNotNull="true"
+    Precision="38"
+    Scale="0"
+    ColumnName="CLIENT_ID"
+    SQLType="NUMERIC"
+    Type="oracle.jbo.domain.Number"
+    ColumnType="NUMBER"
+    TableName="TMCS_LOOKUP_TYPES">
+    <DesignTime>
+      <Attr Name="_DisplaySize" Value="39"/>
+    </DesignTime>
+  </Attribute>
+  <AccessorAttribute
+    Name="TmcsLookupValues"
+    Association="model.FkLookupAssoc"
+    AssociationEnd="model.FkLookupAssoc.TmcsLookupValues"
+    AssociationOtherEnd="model.FkLookupAssoc.TmcsLookupTypes"
+    Type="oracle.jbo.RowIterator"
+    IsUpdateable="false"/>
+  <Key
+    Name="LookupPk"
+    PrimaryKey="true">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="LOOKUP_PK"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupTypes.LookupId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011490">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011490"/>
+      <Attr Name="_checkCondition" Value='"LOOKUP_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupTypes.LookupId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011491">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011491"/>
+      <Attr Name="_checkCondition" Value='"LOOKUP_CODE" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupTypes.LookupCode"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011492">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011492"/>
+      <Attr Name="_checkCondition" Value='"LOOKUP_NAME" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupTypes.LookupName"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011493">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011493"/>
+      <Attr Name="_checkCondition" Value='"DESCRIPTION" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupTypes.Description"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011494">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011494"/>
+      <Attr Name="_checkCondition" Value='"SECURITY_LEVEL" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupTypes.SecurityLevel"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011495">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011495"/>
+      <Attr Name="_checkCondition" Value='"ORG_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupTypes.OrgId"/>
+    </AttrArray>
+  </Key>
+  <Key
+    Name="SysC0011496">
+    <DesignTime>
+      <Attr Name="_DBObjectName" Value="SYS_C0011496"/>
+      <Attr Name="_checkCondition" Value='"CLIENT_ID" IS NOT NULL'/>
+      <Attr Name="_isCheck" Value="true"/>
+    </DesignTime>
+    <AttrArray Name="Attributes">
+      <Item Value="model.TmcsLookupTypes.ClientId"/>
+    </AttrArray>
+  </Key>
+</Entity>

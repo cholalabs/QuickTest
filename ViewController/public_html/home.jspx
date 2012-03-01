@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:messages id="m1"/>
+      <af:form id="f1">
+        <af:pageTemplate viewId="/oracle/ui/pattern/dynamicShell/dynamicTabShell.jspx"
+                         value="#{bindings.pageTemplateBinding}" id="pt1">
+          <f:facet name="copyright"/>
+          <f:facet name="about"/>
+          <f:facet name="navigation"/>
+          <f:facet name="globalLinks"/>
+          <f:facet name="status"/>
+          <f:facet name="globalToolbar"/>
+          <f:facet name="globalSearch"/>
+          <f:facet name="globalTabs"/>
+          <f:facet name="welcome">
+            <af:table value="#{bindings.TmcsLookupTypesView1.collectionModel}"
+                      var="row"
+                      rows="#{bindings.TmcsLookupTypesView1.rangeSize}"
+                      emptyText="#{bindings.TmcsLookupTypesView1.viewable ? 'No data to display.' : 'Access Denied.'}"
+                      fetchSize="#{bindings.TmcsLookupTypesView1.rangeSize}"
+                      rowBandingInterval="0"
+                      filterModel="#{bindings.TmcsLookupTypesView1Query.queryDescriptor}"
+                      queryListener="#{bindings.TmcsLookupTypesView1Query.processQuery}"
+                      filterVisible="true" varStatus="vs"
+                      selectedRowKeys="#{bindings.TmcsLookupTypesView1.collectionModel.selectedRow}"
+                      selectionListener="#{bindings.TmcsLookupTypesView1.collectionModel.makeCurrent}"
+                      rowSelection="single" id="t1">
+              <af:column sortProperty="LookupId" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.LookupId.label}"
+                         id="c12">
+                <af:outputText value="#{row.LookupId}" id="ot1">
+                  <af:convertNumber groupingUsed="false"
+                                    pattern="#{bindings.TmcsLookupTypesView1.hints.LookupId.format}"/>
+                </af:outputText>
+              </af:column>
+              <af:column sortProperty="LookupCode" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.LookupCode.label}"
+                         id="c10">
+                <af:outputText value="#{row.LookupCode}" id="ot9"/>
+              </af:column>
+              <af:column sortProperty="LookupName" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.LookupName.label}"
+                         id="c1">
+                <af:outputText value="#{row.LookupName}" id="ot12"/>
+              </af:column>
+              <af:column sortProperty="Description" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.Description.label}"
+                         id="c4">
+                <af:outputText value="#{row.Description}" id="ot6"/>
+              </af:column>
+              <af:column sortProperty="SecurityLevel" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.SecurityLevel.label}"
+                         id="c5">
+                <af:outputText value="#{row.SecurityLevel}" id="ot10"/>
+              </af:column>
+              <af:column sortProperty="CreationDate" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.CreationDate.label}"
+                         id="c11">
+                <f:facet name="filter">
+                  <af:inputDate value="#{vs.filterCriteria.CreationDate}"
+                                id="id1"/>
+                </f:facet>
+                <af:outputText value="#{row.CreationDate}" id="ot11">
+                  <af:convertDateTime pattern="#{bindings.TmcsLookupTypesView1.hints.CreationDate.format}"/>
+                </af:outputText>
+              </af:column>
+              <af:column sortProperty="CreatedBy" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.CreatedBy.label}"
+                         id="c13">
+                <af:outputText value="#{row.CreatedBy}" id="ot5"/>
+              </af:column>
+              <af:column sortProperty="LastUpdateDate" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.LastUpdateDate.label}"
+                         id="c8">
+                <f:facet name="filter">
+                  <af:inputDate value="#{vs.filterCriteria.LastUpdateDate}"
+                                id="id2"/>
+                </f:facet>
+                <af:outputText value="#{row.LastUpdateDate}" id="ot3">
+                  <af:convertDateTime pattern="#{bindings.TmcsLookupTypesView1.hints.LastUpdateDate.format}"/>
+                </af:outputText>
+              </af:column>
+              <af:column sortProperty="LastUpdatedBy" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.LastUpdatedBy.label}"
+                         id="c2">
+                <af:outputText value="#{row.LastUpdatedBy}" id="ot7"/>
+              </af:column>
+              <af:column sortProperty="LastUpdateLogin" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.LastUpdateLogin.label}"
+                         id="c3">
+                <af:outputText value="#{row.LastUpdateLogin}" id="ot8">
+                  <af:convertNumber groupingUsed="false"
+                                    pattern="#{bindings.TmcsLookupTypesView1.hints.LastUpdateLogin.format}"/>
+                </af:outputText>
+              </af:column>
+              <af:column sortProperty="ObjectVersionNumber" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.ObjectVersionNumber.label}"
+                         id="c6">
+                <af:outputText value="#{row.ObjectVersionNumber}" id="ot13">
+                  <af:convertNumber groupingUsed="false"
+                                    pattern="#{bindings.TmcsLookupTypesView1.hints.ObjectVersionNumber.format}"/>
+                </af:outputText>
+              </af:column>
+              <af:column sortProperty="OrgId" filterable="true" sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.OrgId.label}"
+                         id="c7">
+                <af:outputText value="#{row.OrgId}" id="ot4">
+                  <af:convertNumber groupingUsed="false"
+                                    pattern="#{bindings.TmcsLookupTypesView1.hints.OrgId.format}"/>
+                </af:outputText>
+              </af:column>
+              <af:column sortProperty="ClientId" filterable="true"
+                         sortable="true"
+                         headerText="#{bindings.TmcsLookupTypesView1.hints.ClientId.label}"
+                         id="c9">
+                <af:outputText value="#{row.ClientId}" id="ot2">
+                  <af:convertNumber groupingUsed="false"
+                                    pattern="#{bindings.TmcsLookupTypesView1.hints.ClientId.format}"/>
+                </af:outputText>
+              </af:column>
+            </af:table>
+          </f:facet>
+          <f:facet name="innerToolbar"/>
+        </af:pageTemplate>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>
